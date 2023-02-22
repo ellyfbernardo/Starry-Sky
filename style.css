@@ -1,0 +1,33 @@
+
+body {
+     background-color: #061321;
+     overflow: hidden;
+}
+
+.stars {
+     width: 1px;
+     height: 1px;
+     background-color: #FFF;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     animation: piscar 2.5s infinite;
+}
+
+.stars:nth-of-type(1){
+     top: 10%;
+     left: 20%;
+}
+
+@keyframes piscar {
+
+     0% {
+          opacity: 0;
+     }
+     50% {
+          opacity: 1;
+     }
+     100% {
+          opacity: 0;
+     }
+}
